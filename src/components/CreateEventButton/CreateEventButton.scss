@@ -1,0 +1,27 @@
+.button {
+  border: none;
+  width: 40px;
+  height: 60px;
+  background-color: white;
+  position: absolute;
+  left: 5px;
+  top: 70px;
+  cursor: pointer;
+  .button__image {
+    width: 40px;
+    height: 40px;
+    opacity: .7;
+  }
+  &:hover .button__image {
+    opacity: 1;
+  }
+  &:hover .button__text {
+    font-weight: 700;
+  }
+}
+
+
+
+.button__text {
+  font-weight: 500;
+}

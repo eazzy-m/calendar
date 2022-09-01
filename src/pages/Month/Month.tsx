@@ -1,8 +1,8 @@
 import React from 'react';
 import {MonthType} from "../../types/types";
 
-import "./Month.scss"
 import Day from "../Day/Day";
+import "./Month.scss"
 
 function Month(props: { month: MonthType }) {
 

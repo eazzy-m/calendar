@@ -1,10 +1,13 @@
 import React from 'react';
 
+import "./Sidebar.scss";
+import CreateEventButton from "../../components/CreateEventButton/CreateEventButton";
+
 function Sidebar() {
     return (
-        <div>
-
-        </div>
+        <aside className="sidebar">
+            <CreateEventButton/>
+        </aside>
     );
 }
 

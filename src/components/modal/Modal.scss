@@ -1,0 +1,33 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .35);
+  visibility: visible;
+}
+
+.modal_inactive {
+  display: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin-bottom: 100px;
+}
+
+.input {
+  padding: 10px 12px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  width: 120px;
+}

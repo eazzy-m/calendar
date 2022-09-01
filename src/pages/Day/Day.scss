@@ -8,17 +8,25 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.day-container_active {
+
+  width: 25px;
+  height: 25px;
+  color: white;
+  background-color: #ff7900;
+  border-radius: 50%;
+}
+
 .day-description {
 
 }
 
 .day-number {
-
+  width: 25px;
+  height: 25px;
 }
 
 .today {
-  width: 25px;
-  height: 25px;
   color: white;
   background-color: cornflowerblue;
   border-radius: 50%;
