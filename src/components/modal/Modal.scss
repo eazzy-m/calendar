@@ -6,6 +6,7 @@
   width: 100vw;
   z-index: 10;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, .35);
@@ -18,16 +19,40 @@
 
 .form {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 450px;
-  margin-bottom: 100px;
 }
 
 .input {
   padding: 10px 12px;
+  height: 45px;
+  width: 300px;
+  font-weight: 500;
+  &:focus {
+    background-color: #ff7900;
+  }
+  &:valid {
+    background-color: #ff7900;
+  }
 }
 
 .submit-button {
   margin-top: 20px;
+  margin-left: -2px;
+  font-weight: 500;
   width: 120px;
+  height: 45px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+
+.date {
+  width: 418px;
+  height: 60px;
+  margin-top: -20px;
+  border: 1px solid red;
+  margin-bottom: 100px;
+  background-color: white;
 }

@@ -2,6 +2,7 @@ import { configureStore, ThunkAction, Action} from '@reduxjs/toolkit';
 import {monthSlice} from "../redux/slices/monthSlice"
 import {modalSlice} from "../redux/slices/modalSlice";
 
+
 export const store = configureStore({
   reducer: {
     month: monthSlice.reducer,

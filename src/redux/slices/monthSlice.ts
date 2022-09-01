@@ -4,15 +4,7 @@ import dayjs from "dayjs";
 
 const initialState = {
     month: dayjs().month(),
-    selectedDay: {
-        0: "",
-        1: "",
-        2: "-",
-        3: "",
-        4: "",
-        5: "-",
-        6: "",
-        7: ""}
+    selectedDay: ""
 };
 
 export const monthSlice = createSlice({
@@ -29,8 +21,7 @@ export const monthSlice = createSlice({
             state.month = dayjs().month();
         },
         selectDay: (state, action) => {
-            state.selectedDay = {...action.payload}
-            console.log(state.selectedDay)
+            state.selectedDay = action.payload
         }
     }
 });
