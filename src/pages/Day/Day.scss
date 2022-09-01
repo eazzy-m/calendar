@@ -1,0 +1,25 @@
+.day-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  min-height: 110px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.day-description {
+
+}
+
+.day-number {
+
+}
+
+.today {
+  width: 25px;
+  height: 25px;
+  color: white;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+}
