@@ -1,14 +1,16 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import {monthSlice} from "../redux/slices/monthSlice"
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    month: monthSlice.reducer,
   },
 });
 
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;
+export const month = (state: RootState) => state.month.month;
+
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
   RootState,

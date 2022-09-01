@@ -1,0 +1,57 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.header__title {
+  margin-left: 10px;
+}
+
+.logo {
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.header__button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.header__button_today {
+  width: 60px;
+  height: 30px;
+  padding: 1px 1px 1px 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin: 0 20px;
+  &:hover {
+    padding: 2px 0 0 0;
+    opacity: .7;
+    border-bottom: 1px solid black;
+  }
+}
+
+.header__button_navigation {
+  transform: translateX(-3px);
+  &:hover {
+   opacity: .7;
+  }
+}
+
+.left-button {
+  width: 40px;
+  height: 40px;
+  transform: rotateZ(270deg);
+
+}
+
+.right-button {
+  width: 40px;
+  height: 40px;
+  transform: rotateZ(90deg);
+}
