@@ -35,6 +35,11 @@
   &:valid {
     background-color: #ff7900;
   }
+  &::placeholder {
+    font-weight: 500;
+    color: black;
+    letter-spacing: .1em;
+  }
 }
 
 .submit-button {
@@ -52,7 +57,24 @@
   width: 418px;
   height: 60px;
   margin-top: -20px;
-  border: 1px solid red;
-  margin-bottom: 100px;
   background-color: white;
+}
+
+.labels-container {
+  display: flex;
+  color: gold;
+  justify-content: space-between;
+  width: 180px;
+  margin: -20px auto 100px;
+}
+
+.label {
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.checked {
+  color: white;
+  z-index: 15;
 }

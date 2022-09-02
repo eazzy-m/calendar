@@ -15,6 +15,7 @@ function App() {
     const [currentMonth, setCurrentMonth] = useState<MonthType>(getMonth);
     const monthState = useSelector(month);
     const dispatch = useDispatch();
+
     useEffect(() => {
         setCurrentMonth(getMonth(monthState));
         }, [monthState]);
@@ -24,7 +25,6 @@ function App() {
             dispatch(closeModal())
         }
     };
-
 
     return (
       <React.Fragment>
