@@ -3,7 +3,10 @@ import dayjs from "dayjs";
 
 
 const initialState = {
-    month: dayjs().month()
+    month: dayjs().month(),
+    selectedDay: {
+        date: dayjs().format("dddd, MMM DD"),
+    }
 };
 
 export const monthSlice = createSlice({
@@ -11,17 +14,25 @@ export const monthSlice = createSlice({
     initialState,
     reducers: {
         nextMonth: (state) => {
-            console.log('next month')
-            state.month += 1
+            state.month += 1;
         },
         previousMonth: (state) => {
-            console.log('previous month')
-            state.month -= 1
-        }
+            state.month -= 1;
+        },
+        today: (state) => {
+            state.month = dayjs().month();
+        },
+        selectDay: (state, action) => {
+            state.selectedDay.date = action.payload;
+        },
     }
 });
 
-export const {nextMonth, previousMonth} = monthSlice.actions
+export const {
+    nextMonth,
+    previousMonth,
+    today,
+    selectDay,
+} = monthSlice.actions;
 
-export default monthSlice.reducer
 

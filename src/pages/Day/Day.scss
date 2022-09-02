@@ -1,25 +1,89 @@
 .day-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 200px;
-  min-height: 110px;
+  min-height: 130px;
   font-family: 'Open Sans', sans-serif;
 }
 
-.day-description {
-
-}
-
-.day-number {
-
-}
-
-.today {
+.day-container_active {
   width: 25px;
   height: 25px;
   color: white;
+  background-color: #ff7900;
+  border-radius: 50%;
+}
+
+.day-number {
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.today {
+  color: white;
   background-color: cornflowerblue;
   border-radius: 50%;
+}
+
+.events-container {
+  width: 100%;
+}
+
+.events-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3px;
+  line-height: 16px;
+  padding-block: 2px;
+  border-radius: 6px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.event-text {
+  font-weight: 500;
+}
+
+.event-button {
+  position: absolute;
+  top: -1px;
+  border: 1px solid black;
+  background-color: #ff7900;
+  width: 36px;
+  height: 105%;
+  cursor: pointer;
+}
+
+.event-button_delete {
+  right: -1px;
+  padding: 1px 1px 3px 1px;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  &:hover {
+    border-left: 1px solid black;
+    padding: 1px 2px 3px 1px;
+  }
+}
+
+.event-button_edit {
+  left: -1px;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  padding: 2px 1px 3px 1px;
+  &:hover {
+    border-right: 1px solid black;
+    padding: 2px 1px 3px 2px;
+  }
 }
